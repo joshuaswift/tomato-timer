@@ -1,3 +1,4 @@
+
 import React, { Component } from "react";
 import * as timerStates from "../../timerStates";
 
@@ -14,7 +15,7 @@ class TimerButton extends Component {
         //TO-DO change buttons to block level components
         <div className="text-center">
           <div className=" row">
-            <div className="col-md-4 col-lg-2">
+            <div className="col-md-4 col-lg-12">
               <button
                 className="btn btn-success btn-block"
                 onClick={this.props.startShortBreak}
@@ -25,7 +26,7 @@ class TimerButton extends Component {
             </div>
           </div>
           <div className="row">
-            <div className="col-md-4 col-lg-2">
+            <div className="col-md-4 col-lg-12">
               <button className="btn btn-success btn-block" onClick={this.props.startTimer}>
                 Start
             </button>
@@ -45,28 +46,7 @@ class TimerButton extends Component {
         </div>
       );
 
-    /*<div className="container text-center">
 
-      <button
-        className="btn btn-lg btn-success center-block"
-        onClick={this.props.startShortBreak}
-      >
-        Short Break
-      </button>
-
-      <button className="btn btn-lg btn-success center-block" onClick={this.props.startTimer}>
-        Start
-      </button>
-
-
-      <button
-        className="btn btn-lg btn-success center-block"
-        onClick={this.props.startLongBreak}
-      >
-        Long Break
-      </button>
-    </div>
-*/
 
 
     if (this.props.timerState === timerStates.RUNNING)
