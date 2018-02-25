@@ -15,9 +15,9 @@ class TimerButton extends Component {
         //TO-DO change buttons to block level components
         <div className="text-center">
           <div className=" row">
-            <div className="col-md-4 col-lg-12">
+            <div className="col-md-4 col-lg-4 col-sm-4">
               <button
-                className="btn btn-success btn-block"
+                className="btn btn-success btn-block center-block"
                 onClick={this.props.startShortBreak}
               >
 
@@ -26,17 +26,17 @@ class TimerButton extends Component {
             </div>
           </div>
           <div className="row">
-            <div className="col-md-4 col-lg-12">
-              <button className="btn btn-success btn-block" onClick={this.props.startTimer}>
+            <div className="col-md-4 col-lg-4 col-sm-4">
+              <button className="btn btn-success btn-block center-block" onClick={this.props.startTimer}>
                 Start
             </button>
             </div>
           </div>
           <div className="row">
-            <div className="col-md-4 col-lg-2">
+            <div className="col-md-4 col-lg-4 col-sm-4">
 
               <button
-                className="btn btn-success btn-block"
+                className="btn btn-success btn-block center-block"
                 onClick={this.props.startLongBreak}
               >
                 Long Break
